@@ -1,0 +1,36 @@
+[BEGIN PROBLEM]
+This problem is known as the multi-hop influence maximization problem (k-dDSP)---d-hop coverage is considered. More specifically, in the k-dDSP the task is to find a set U ⊆ V of cardinality k such that the set C_U ⊆ V of nodes that are covered (or influenced) by U is of maximal cardinality. Hereby, a node v forms part of C_U---that is, v is said to be covered (or influenced) by U---if there exists a node v' ∈ U such that the shortest directed path from v' to v consists of at most d arcs.
+[END PROBLEM]
+[BEGIN EXAMPLE GRAPH 1]
+[BEGIN DATA]
+node,in-degree,out-degree,closeness (outward distance),betweenness,pagerank (outcoming links)
+{{graph_data_example}}
+[END DATA]
+[BEGIN ANSWER GRAPH 1]
+The nodes that form a feasible solution of high quality to this problem are: {{high_quality_solution}}
+[END ANSWER GRAPH 1]
+[END EXAMPLE GRAPH 1]
+[BEGIN EVALUATION GRAPH 2]
+[BEGIN DATA]
+node,in-degree,out-degree,closeness (outward distance),betweenness,pagerank (outcoming links)
+{{graph_data_evalution}}
+[END DATA]
+[END EVALUATION GRAPH 2]
+[BEGIN RULES ANSWERING]
+Consider the following equation to assign a probability range to each node: 
+\text{Influence(N)} = \text{sigmoid}\left(\alpha_1 \cdot (1 - (\beta_1 - IDN)) + \alpha_2 \cdot (1 - (\beta_2 - ODN)) + \alpha_3 \cdot (1 - (\beta_3 - CC)) + \alpha_4 \cdot (1 - (\beta_4 - BC)) + \alpha_5 \cdot (1 - (\beta_5 - PR)) \right)
+- Alpha: Represents the weighting coefficients assigned to each metric in the influence calculation. The sum of all alpha values must equal 1 (\(\sum_{i=1}^{5} \alpha_i = 1\)), and each alpha value could be different, inferring the proper distribution representing the importance among the metrics. Each alpha coefficient (\(\alpha_{i}\)) is constrained to the range (0, 1). 
+- Beta: Represents a factor of desirable results for each metric, indicating their relative importance. Each beta value (\(\beta_{i}\)) is independent and constrained to the range (0, 1). The beta value indicates where the favorable values are expected relative to the metrics; it serves as a repair parameter.
+The goal is to identify patterns in the selection of nodes for the solution of Graph 1 (for example) and to consider the metrics from Graph 2 to infer the values of alpha and beta.
+The response must be in the following format:
+alpha_1={{value_alpha_1}}
+alpha_2={{value_alpha_2}}
+alpha_3={{value_alpha_3}}
+alpha_4={{value_alpha_4}}
+alpha_5={{value_alpha_5}}
+beta_1={{value_beta_1}}
+beta_2={{value_beta_2}}
+beta_3={{value_beta_3}}
+beta_4={{value_beta_4}}
+beta_5={{value_beta_5}}
+[END RULES ANSWERING]

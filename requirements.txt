@@ -1,0 +1,5 @@
+networkx==3.2.1
+anthropic==0.19.2
+pydantic==2.6.4
+pandas==2.1.2
+numpy==1.26.4
