@@ -8,12 +8,12 @@
 
 import anthropic
 
-def claude(prompt, api_key, model="claude-3-opus-20240229"):
+def execute_anthropic(prompt, api_key, model="claude-3-opus-20240229"):
     client = anthropic.Anthropic(
         api_key=api_key
     )
     message = client.messages.create(
-        model="claude-3-opus-20240229",
+        model=model,
         max_tokens=1000,
         temperature=0,
         messages=[
@@ -31,4 +31,4 @@ def claude(prompt, api_key, model="claude-3-opus-20240229"):
     return message.content[0].text
 
 def execute_llm(prompt, api_key):
-    return claude(prompt, api_key)
+    return execute_anthropic(prompt, api_key)
