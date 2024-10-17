@@ -15,8 +15,8 @@ from typing import List
 from src.utils import write_file
 
 class AlphaBetaModel(BaseModel):
-    alpha: List[float] = Field(..., description="Lista de valores alpha")
-    beta: List[float] = Field(..., description="Lista de valores beta")
+    alpha: List[float] = Field(..., description="values alpha")
+    beta: List[float] = Field(..., description="values beta")
 
 def extract_values(data_str: str) -> AlphaBetaModel:
     alpha_values = re.findall(r'alpha_\d+=(\d\.\d+)', data_str)
