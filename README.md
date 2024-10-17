@@ -31,7 +31,7 @@ pip3.11 install -r requirements.txt
 - Create a prompt that extracts metrics from graph instances and incorporates our specific requests.
 - Run a prompt in the LLM to extract values from its response and generate a file containing probabilities for each node in the instance.
 
-**Note:** Only Anthropic Claude (LLM) is accessible.
+**Note:** Only Anthropic Claude (LLM) is available (should be extended shortly).
 ## Examples
 ### Generating prompt
 1. Without example graph
