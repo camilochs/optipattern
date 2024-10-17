@@ -1,0 +1,19 @@
+Based on the solution nodes provided for Graph 1 and analyzing the metrics from Graph 2, here are the inferred values for alpha and beta:
+
+alpha_1=0.15
+alpha_2=0.25
+alpha_3=0.20
+alpha_4=0.15
+alpha_5=0.25
+beta_1=0.60
+beta_2=0.50
+beta_3=0.90
+beta_4=0.60
+beta_5=0.50
+
+The rationale:
+- In-degree (alpha_1 and beta_1): The solution nodes have relatively high in-degree values, so a moderate alpha_1 of 0.15 is assigned. The beta_1 value of 0.60 indicates that favorable in-degree values are expected to be above average.
+- Out-degree (alpha_2 and beta_2): The solution nodes have a mix of high and moderate out-degree values, so a higher alpha_2 of 0.25 is assigned. The beta_2 value of 0.50 suggests that favorable out-degree values are expected to be around the middle range.
+- Closeness centrality (alpha_3 and beta_3): The solution nodes have consistently high closeness centrality values, so a significant alpha_3 of 0.20 is assigned. The high beta_3 value of 0.90 indicates that favorable closeness centrality values are expected to be near the maximum.
+- Betweenness centrality (alpha_4 and beta_4): The solution nodes have a mix of high and moderate betweenness centrality values, so a moderate alpha_4 of 0.15 is assigned. The beta_4 value of 0.60 suggests that favorable betweenness centrality values are expected to be above average.
+- PageRank (alpha_5 and beta_5): The solution nodes have a mix of high and moderate PageRank values, so a higher alpha_5 of 0.25 is assigned. The beta_5 value of 0.50 indicates that favorable PageRank values are expected to be around the middle range.

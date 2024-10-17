@@ -1,0 +1,1 @@
+{"error": {"message": "{\"error\":{\"object\":\"error\",\"type\":\"invalid_request_error\",\"message\":\"The prompt is too long: 37205, model maximum context length: 32767\"}}", "code": 400}}

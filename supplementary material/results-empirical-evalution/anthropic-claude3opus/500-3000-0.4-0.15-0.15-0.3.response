@@ -1,0 +1,23 @@
+Based on the solution nodes provided for Graph 1 and analyzing the metrics from Graph 2, here are the inferred values for alpha and beta:
+
+alpha_1=0.15
+alpha_2=0.30
+alpha_3=0.20
+alpha_4=0.20
+alpha_5=0.15
+beta_1=0.60
+beta_2=0.60
+beta_3=0.90
+beta_4=0.50
+beta_5=0.40
+
+The rationale:
+- Out-degree (alpha_2, beta_2) seems to be the most important factor, with many solution nodes having high out-degree values. Assigning it the highest alpha of 0.30 and a beta of 0.60 to favor nodes with out-degree above average.
+
+- Closeness centrality (alpha_3, beta_3) also appears important, with solution nodes often having high closeness. Giving it an alpha of 0.20 and a high beta of 0.90 to strongly favor nodes with closeness near the maximum.
+
+- Betweenness centrality (alpha_4, beta_4) and in-degree (alpha_1, beta_1) have moderate importance. They receive alphas of 0.20 and 0.15 respectively. Betas of 0.50 and 0.60 favor nodes with betweenness and in-degree above the midpoint.
+
+- PageRank (alpha_5, beta_5) seems least important compared to the other metrics for the solution nodes. Assigning it the lowest alpha of 0.15 and a beta of 0.40 to slightly favor nodes with PageRank above the lower end of the range.
+
+The alpha values sum to 1 and the betas target favorable ranges for each metric based on the solution node characteristics. This should help identify nodes with high influence for the k-dDSP problem.

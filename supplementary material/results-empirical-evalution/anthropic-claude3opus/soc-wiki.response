@@ -1,0 +1,25 @@
+Based on the solution nodes provided for Graph 1 and analyzing the metrics from Graph 2, here is my attempt at inferring the alpha and beta values:
+
+alpha_1=0.15
+alpha_2=0.25
+alpha_3=0.20
+alpha_4=0.30
+alpha_5=0.10
+beta_1=0.70
+beta_2=0.60
+beta_3=0.90
+beta_4=0.60
+beta_5=0.50
+
+The rationale:
+- In-degree (alpha_1) seems to have some importance but not the highest, so assigning it a moderate weight of 0.15. The beta_1 value of 0.70 suggests favoring nodes with relatively high in-degree.
+
+- Out-degree (alpha_2) appears more important, so giving it a higher weight of 0.25. A beta_2 of 0.60 indicates a preference for nodes with above average out-degree.
+
+- Closeness centrality (alpha_3) also seems quite relevant, assigning it a weight of 0.20. The high beta_3 of 0.90 shows nodes with very high closeness are desirable.
+
+- Betweenness centrality (alpha_4) looks to be the most important metric based on the solution set, so it gets the highest weight of 0.30. A beta_4 of 0.60 favors nodes with betweenness higher than the median.
+
+- PageRank (alpha_5) seems to have the least importance comparatively, so assigning it the lowest weight of 0.10. The beta_5 of 0.50 suggests the PageRank value itself is less critical as long as it's not too low.
+
+The alpha weights add up to 1 and represent the relative importance of each metric. The beta values capture desirable ranges for each based on the selected nodes. This is my best estimate given the limited data, but with more solution sets the alpha and beta values could likely be further optimized.

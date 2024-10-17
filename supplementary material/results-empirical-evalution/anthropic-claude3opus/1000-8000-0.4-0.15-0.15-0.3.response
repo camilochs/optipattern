@@ -1,0 +1,29 @@
+Based on the analysis of the solution nodes from Graph 1 and the metrics from Graph 2, the following alpha and beta values are inferred:
+
+alpha_1=0.15
+alpha_2=0.25
+alpha_3=0.20
+alpha_4=0.15
+alpha_5=0.25
+beta_1=0.60
+beta_2=0.50
+beta_3=0.90
+beta_4=0.50
+beta_5=0.50
+
+The rationale for these values:
+
+- alpha_2 and alpha_5 are assigned higher weights (0.25 each) as the out-degree (ODN) and PageRank (PR) metrics seem to have a stronger correlation with the selected nodes in Graph 1. Nodes with higher out-degree and PageRank are more likely to be influential.
+
+- alpha_3 is assigned a moderate weight (0.20) as the closeness centrality (CC) also appears to be a relevant factor, with many selected nodes having high closeness values.
+
+- alpha_1 and alpha_4 are assigned lower weights (0.15 each) as the in-degree (IDN) and betweenness centrality (BC) seem to have a weaker correlation with the selected nodes.
+
+- beta_1 is set to 0.60, indicating that nodes with in-degree values closer to 0.60 are more desirable.
+
+- beta_2 is set to 0.50, suggesting that nodes with out-degree values around 0.50 are preferred.
+...
+
+- beta_4 and beta_5 are both set to 0.50, indicating that nodes with betweenness centrality and PageRank values near 0.50 are favored.
+
+These alpha and beta values aim to capture the patterns observed in the selection of influential nodes in Graph 1 based on the metrics provided in Graph 2. The sigmoid function will map the weighted metrics to a probability range, helping to identify the most influential nodes.

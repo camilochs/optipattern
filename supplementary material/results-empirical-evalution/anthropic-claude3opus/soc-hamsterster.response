@@ -1,0 +1,18 @@
+Based on the analysis of the solution nodes from Graph 1 and the metrics from Graph 2, the following alpha and beta values are inferred:
+
+alpha_1=0.1
+alpha_2=0.3
+alpha_3=0.2
+alpha_4=0.1
+alpha_5=0.3
+beta_1=0.6
+beta_2=0.6
+beta_3=0.9
+beta_4=0.6
+beta_5=0.6
+
+The rationale is:
+- Out-degree (alpha_2) and PageRank (alpha_5) are given higher weights of 0.3 each, as the solution nodes tend to have relatively high values for these metrics, indicating their importance in influence.
+- Closeness centrality (alpha_3) is assigned a moderate weight of 0.2, as solution nodes generally have high closeness values.
+- In-degree (alpha_1) and betweenness centrality (alpha_4) are given lower weights of 0.1 each, as their correlation with being a solution node seems weaker.
+- The beta values are set to 0.6 for most metrics, suggesting favorable values are slightly above average. For closeness centrality (beta_3), 0.9 is chosen since solution nodes consistently have very high closeness values.

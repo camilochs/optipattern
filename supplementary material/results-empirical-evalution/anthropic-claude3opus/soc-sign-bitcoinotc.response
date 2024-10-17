@@ -1,0 +1,21 @@
+Based on the analysis of the nodes selected in the solution for Graph 1 and the metrics provided for Graph 2, I infer the following values for the alpha and beta parameters:
+
+alpha_1=0.15
+alpha_2=0.25
+alpha_3=0.20
+alpha_4=0.30
+alpha_5=0.10
+beta_1=0.70
+beta_2=0.60
+beta_3=0.80
+beta_4=0.05
+beta_5=0.10
+
+The rationale is:
+- In-degree (alpha_1) has a moderate influence, as some but not all selected nodes have high in-degree. beta_1 is set relatively high as higher in-degree seems generally favorable.
+- Out-degree (alpha_2) has a stronger influence, with many selected nodes having high out-degree. beta_2 is set lower than beta_1 as very high out-degree is less critical.
+- Closeness centrality (alpha_3) has a significant influence, with most selected nodes having high closeness. beta_3 is set high as values closer to 1 are desirable.
+- Betweenness centrality (alpha_4) is assigned the highest weight, as the top selected nodes have very high betweenness. However, beta_4 is set very low as extremely high values are not required.
+- PageRank (alpha_5) has the lowest influence, as the relationship with node selection is less clear. beta_5 is also set low as high PageRank does not seem to be a major factor.
+
+The alpha weights are distributed to reflect the relative importance of each metric, while the beta thresholds are set to capture the range of favorable values observed for the selected nodes in Graph 1 based on the Graph 2 data.

@@ -1,0 +1,12 @@
+Based on the analysis of the solution nodes from Graph 1 and the metrics from Graph 2, the following alpha and beta values are inferred:   
+alpha_1=0.15  
+alpha_2=0.25 
+alpha_3=0.35 
+alpha_4=0.15 
+alpha_5=0.10 
+beta_1=0.60 
+beta_2=0.70 
+beta_3=0.90 
+beta_4=0.60 
+beta_5=0.70  
+The rationale for these values:  - Closeness centrality (alpha_3 and beta_3) seems to be the most important metric, as the solution nodes generally have high closeness values (around 0.9). So alpha_3 is assigned the highest weight of 0.35, and beta_3 is set to 0.90.  - Out-degree (alpha_2 and beta_2) also appears quite relevant, with solution nodes often having out-degree values around 0.7. Therefore, alpha_2 gets the second highest weight of 0.25, and beta_2 is 0.70.   - In-degree (alpha_1 and beta_1) and betweenness centrality (alpha_4 and beta_4) seem to have moderate importance, with favorable values around 0.6 for the solution nodes. They are assigned equal weights of 0.15, and their beta values are set to 0.60.  - PageRank (alpha_5 and beta_5) appears to be the least critical metric here, so it gets the lowest weight of 0.10. The beta_5 value of 0.70 indicates that higher PageRank values around 0.7 are still somewhat desirable.  The alpha weights add up to 1, and the beta thresholds are set based on the observed patterns in the Graph 1 solution relative to the Graph 2 metrics. This combination aims to capture the influence and importance of nodes for this specific problem.
