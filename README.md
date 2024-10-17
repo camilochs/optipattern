@@ -57,7 +57,7 @@ This function only works to run an Anthropic model, in particular, in the paper 
   --api-key <YOU ANTHROPIC API KEY>
 Probabilities generated: outputs/probabilities/probabilities_20241019_142504.txt
 ```
-Once you obtain the fixed probabilities for each node, you can incorporate them into the functioning of a metaheuristic to influence or direct your search. This process is explained in Section “USING LLM OUTPUT TO GUIDE A METAHEURISTIC” of our paper.
+Once you obtain the fixed probabilities for each node, you can incorporate them into the functioning of a metaheuristic to influence or guide their search. This process is explained in Section “USING LLM OUTPUT TO GUIDE A METAHEURISTIC” of our paper.
 
 ## Cite
 ```
