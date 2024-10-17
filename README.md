@@ -23,15 +23,38 @@ Clone this repository and install the required dependencies:
 ```
 git clone https://github.com/camilochs/optipattern.git
 cd optipattern
-pip install -r requirements.txt
+pip3.11 install -r requirements.txt
 ```
 
 ## Features 
 
-## Usages
+- Generate a prompt that from graph instances that extracts the metrics and adds our special requests.
+- Execute a prompt in an LLM extract the values of its response and generate a file of probabilities associated to each node of the instance.
+
+Important: Only Anthropic Claude (LLM) is available.
 
 ## Examples
+### Generating prompt
+1. Without example graph
+   ```
+   >> python3.11 -m generate-prompt --evaluation-graph instances-graphs/evaluation/social-networks/500-3000-0.2-0.0-0.3-0.5
+   Prompt generated: outputs/prompts/prompt_20241017_132802.txt
+   ```
+2. With example graph
+   ```
+   >> python3.11 -m generate-prompt --evaluation-graph instances-graphs/evaluation/social-networks/500-3000-0.2-0.0-0.3-0.5 \
+       --example-graph instances-graphs/examples/graph-100-1.txt \
+       --high-quality-solution-example instances-graphs/examples/high_quality_solution_nodes-graph-100-1.txt
+   Prompt generated: outputs/prompts/prompt_20241017_132904.txt
+   ```
+### Generating probabilities
 
+```
+>> python3.11 -m generate-probabilities --evaluation-graph instances-graphs/evaluation/social-networks/500-3000-0.2-0.0-0.3-0.5 \
+  --prompt outputs/prompts/prompt_20241017_132904.txt \
+  --api-key <YOU ANTHROPIC API KEY>
+Probabilities generated: outputs/probabilities/probabilities_20241019_142504.txt
+```
 
 ## Cite
 ```

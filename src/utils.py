@@ -16,4 +16,4 @@ def write_file(content, prefix, extension="txt"):
     name_file = generate_random_name(prefix, extension)
     with open(f"outputs/{prefix}/{name_file}", "w") as f:
         f.write(content)
-        print(f"Prompt generated: outputs/prompts/{name_file}")
+        print(f"{prefix} generated: outputs/{prefix}/{name_file}")
