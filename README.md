@@ -46,7 +46,10 @@ pip3.11 install -r requirements.txt
        --high-quality-solution-example instances-graphs/examples/high_quality_solution_nodes-graph-100-1.txt
    Prompt generated: outputs/prompts/prompt_20241017_132904.txt
    ```
+
 ### Generating probabilities
+
+This function only works to run an Anthropic model, in particular, in the paper we use Claude-3-Sonnet. If you want to use GPT-x (OpenAI), you can either email me or create your own implementation for integration.
 
 ```
 >> python3.11 -m generate-probabilities --evaluation-graph instances-graphs/evaluation/social-networks/500-3000-0.2-0.0-0.3-0.5 \
@@ -54,6 +57,7 @@ pip3.11 install -r requirements.txt
   --api-key <YOU ANTHROPIC API KEY>
 Probabilities generated: outputs/probabilities/probabilities_20241019_142504.txt
 ```
+Once you obtain the fixed probabilities for each node, you can incorporate them into the functioning of a metaheuristic to influence or direct your search.
 
 ## Cite
 ```
