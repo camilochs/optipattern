@@ -59,6 +59,10 @@ Probabilities generated: outputs/probabilities/probabilities_20241019_142504.txt
 ```
 Once you obtain the fixed probabilities for each node, you can incorporate them into the functioning of a metaheuristic to influence or guide their search. This process is explained in Section “USING LLM OUTPUT TO GUIDE A METAHEURISTIC” of our paper.
 
+## Supplementary Material
+
+All the results of the experiments presented in our paper can be found in the [supplementary material](<supplementary material/>) folder.
+
 ## Cite
 ```
 @article{Sartori2024MetaheuristicsAL,
