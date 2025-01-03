@@ -65,12 +65,14 @@ All the results of the experiments presented in our paper can be found in the [s
 
 ## Cite
 ```
-@article{Sartori2024MetaheuristicsAL,
-  title={Metaheuristics and Large Language Models Join Forces: Towards an Integrated Optimization Approach},
-  author={Camilo Chac{\'o}n Sartori and Christian Blum and Filippo Bistaffa and Guillem Rodr{\'i}guez Corominas},
-  journal={ArXiv},
+@ARTICLE{10818476,
+  author={Sartori, Camilo Chacón and Blum, Christian and Bistaffa, Filippo and Corominas, Guillem Rodríguez},
+  journal={IEEE Access}, 
+  title={Metaheuristics and Large Language Models Join Forces: Towards an Integrated Optimization Approach}, 
   year={2024},
-  volume={abs/2405.18272},
-  url={https://api.semanticscholar.org/CorpusID:270068396}
-}
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Optimization;Metaheuristics;Pattern recognition;Large language models;Transformers;Machine learning algorithms;Graph neural networks;Data models;Approximation algorithms;Vectors;combinatorial optimization;hybrid algorithm;metaheuristics;large languages models},
+  doi={10.1109/ACCESS.2024.3524176}}
 ```
