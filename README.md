@@ -9,7 +9,7 @@ OptiPattern is an innovative tool designed to enhance combinatorial optimization
 
 ### Research Findings
 
-Our research, detailed in the paper ["Metaheuristics and Large Language Models Join Forces: Towards an Integrated Optimization Approach"](https://arxiv.org/abs/2405.18272), demonstrates the effectiveness of this approach. 
+Our research, detailed in the paper ["Metaheuristics and Large Language Models Join Forces: Towards an Integrated Optimization Approach"](https://ieeexplore.ieee.org/document/10818476), demonstrates the effectiveness of this approach. 
 
 Key insight:
 - The probabilities provided by the LLM serve as a *pattern recognition mechanism*.
@@ -66,13 +66,14 @@ All the results of the experiments presented in our paper can be found in the [s
 ## Cite
 ```
 @ARTICLE{10818476,
-  author={Sartori, Camilo Chacón and Blum, Christian and Bistaffa, Filippo and Corominas, Guillem Rodríguez},
+  author={Sartori, Camilo Chacón and Blum, Christian and Bistaffa, Filippo and Rodríguez Corominas, Guillem},
   journal={IEEE Access}, 
-  title={Metaheuristics and Large Language Models Join Forces: Towards an Integrated Optimization Approach}, 
-  year={2024},
-  volume={},
+  title={Metaheuristics and Large Language Models Join Forces: Toward an Integrated Optimization Approach}, 
+  year={2025},
+  volume={13},
   number={},
-  pages={1-1},
-  keywords={Optimization;Metaheuristics;Pattern recognition;Large language models;Transformers;Machine learning algorithms;Graph neural networks;Data models;Approximation algorithms;Vectors;combinatorial optimization;hybrid algorithm;metaheuristics;large languages models},
+  pages={2058-2079},
+  keywords={Optimization;Metaheuristics;Pattern recognition;Large language models;Transformers;Machine learning algorithms;Graph neural networks;Data models;Approximation algorithms;Vectors;Combinatorial optimization;hybrid algorithm;metaheuristics;large language models},
   doi={10.1109/ACCESS.2024.3524176}}
+
 ```
