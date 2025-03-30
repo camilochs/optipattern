@@ -36,10 +36,26 @@ def main():
         help="LLM Api key"
     )
 
+    parser.add_argument(
+        "--provider",
+        type=str,
+        required=True,
+        default="anthropic",
+        help="Provider: anthropic or openai (default: anthropic)"
+    )
+
+
+    parser.add_argument(
+        "--model",
+        type=str,
+        default="claude-3-opus-20240229",
+        help="Model name (default by anthropic)"
+    )
+
     args = parser.parse_args()
 
     metrics = calculate_metrics(args.evaluation_graph)
-    output_llm = execute_llm(args.prompt, args.api_key)
+    output_llm = execute_llm(prompt_file=args.prompt, api_key=args.api_key, provider=args.provider, model=args.model)
     calculate_probabilities(metrics, output_llm)
  
 

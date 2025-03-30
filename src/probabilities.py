@@ -37,7 +37,7 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 def calculate_probabilities(metric_evaluation_graph, output_llm):
-
+    print(output_llm)
     data_io = io.StringIO(metric_evaluation_graph)
     df = pd.read_csv(data_io, names=["node", "idc", "odc", "closeness", "betweenness", "pagerank"])
     

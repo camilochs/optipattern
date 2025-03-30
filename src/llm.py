@@ -1,17 +1,8 @@
-# -----------------------------------------------------------------------------
-# Author: Camilo Chacón Sartori
-# Date: 17-10-2024
-#
-# This file is part of OptiPattern.
-#
-# Copyright (c) [2024] Camilo Chacón Sartori
-
 import anthropic
+import openai
 
 def execute_anthropic(prompt, api_key, model="claude-3-opus-20240229"):
-    client = anthropic.Anthropic(
-        api_key=api_key
-    )
+    client = anthropic.Anthropic(api_key=api_key)
     message = client.messages.create(
         model=model,
         max_tokens=1000,
@@ -30,5 +21,24 @@ def execute_anthropic(prompt, api_key, model="claude-3-opus-20240229"):
     )
     return message.content[0].text
 
-def execute_llm(prompt, api_key):
-    return execute_anthropic(prompt, api_key)
+def execute_openai(prompt, api_key, model="gpt-4o"):
+    openai.api_key = api_key
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=[
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=1000,
+        temperature=0,
+    )
+    return response.choices[0].message["content"]
+
+def execute_llm(prompt_file, api_key, provider="anthropic", model="claude-3-opus-20240229"):
+    with open(prompt_file, "r") as f:
+        prompt = f.read()
+        if provider.lower() == "anthropic":
+            return execute_anthropic(prompt, api_key, model=model)
+        elif provider.lower() == "openai":
+            return execute_openai(prompt, api_key, model=model)
+        else:
+            raise ValueError("Provider must be either 'anthropic' or 'openai'")
