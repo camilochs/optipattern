@@ -11,19 +11,7 @@ OptiPattern is an innovative tool designed to enhance combinatorial optimization
 
 ### Research Findings
 
-<<<<<<< HEAD
 Our research, detailed in the paper [&#34;Metaheuristics and Large Language Models Join Forces: Toward an Integrated Optimization Approach&#34;](https://ieeexplore.ieee.org/document/10818476), demonstrates the effectiveness of this approach.
-================================================================================================================================================================================================
-
-Our research, detailed in the paper [&#34;Metaheuristics and Large Language Models Join Forces: Towards an Integrated Optimization Approach&#34;](https://arxiv.org/abs/2405.18272), demonstrates the effectiveness of this approach.
-
->>>>>>> ad56da8 (update)
->>>>>>>
->>>>>>
->>>>>
->>>>
->>>
->>
 
 Key insight:
 
@@ -97,8 +85,6 @@ All the results of the experiments presented in our paper can be found in the [s
 
 ```
 
-<<<<<<< HEAD
-============
 
 ## Contributing
 
@@ -117,11 +103,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 For any questions or suggestions, feel free to open an issue or contact the repository owner at cchacon@iiia.csic.es
-
->>>>>>> ad56da8 (update)
->>>>>>>
->>>>>>
->>>>>
->>>>
->>>
->>
